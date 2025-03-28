@@ -3,8 +3,11 @@ import { renderGallery, clearGallery } from "./js/render-functions.js";
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
-const searchForm = document.querySelector(".search-form");
+
+
+const searchForm = document.querySelector(".form"); // Виправлено
 const loader = document.querySelector(".loader");
+const galleryContainer = document.querySelector(".gallery");
 
 
 searchForm.addEventListener("submit", async (event) => {
